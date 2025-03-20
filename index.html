@@ -1,19 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Shopping List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Creepster&family=Kaushan+Script&family=Libre+Barcode+39+Extended+Text&family=Permanent+Marker&family=Rock+Salt&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
+    
+   
 <body>
     <div class="shopping-container">
-        <h2>Shopping List</h2>
-        <input type="text" id="itemInput" placeholder="Enter item">
-        <button id="addButton">Add</button>
-        <button id="clearButton">Clear List</button>
-        <ul id="shoppingList"></ul>
+        <h1>Shopping List</h1>
+        
+        <div class="form-container">
+            <input type="text" id="itemInput" placeholder="Enter item">
+            <input type="number" id="priceInput" placeholder="Enter price (KSh)">
+            <button id="addButton">Add</button>
+            <button id="clearButton">Clear</button>
+        </div>
+        
+        <ul id="shoppingList">
+            <!-- Your list items will be dynamically generated -->
+        </ul>
     </div>
     <script src="index.js"></script>
 </body>
-</html>
+</html
